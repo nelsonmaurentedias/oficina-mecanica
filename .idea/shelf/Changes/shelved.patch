@@ -1,0 +1,54 @@
+diff --git a/OneDrive/Área de Trabalho/OficinaMecanica/src/main/java/com/mycompany/telas/TelaPrincipal.form b/OficinaMecanica/src/main/java/com/mycompany/telas/TelaPrincipal.form
+rename from OneDrive/Área de Trabalho/OficinaMecanica/src/main/java/com/mycompany/telas/TelaPrincipal.form
+rename to OficinaMecanica/src/main/java/com/mycompany/telas/TelaPrincipal.form
+diff --git a/OneDrive/Área de Trabalho/OficinaMecanica/src/main/java/com/mycompany/oficinamecanica/OficinaMecanica.java b/OficinaMecanica/src/main/java/com/mycompany/oficinamecanica/OficinaMecanica.java
+rename from OneDrive/Área de Trabalho/OficinaMecanica/src/main/java/com/mycompany/oficinamecanica/OficinaMecanica.java
+rename to OficinaMecanica/src/main/java/com/mycompany/oficinamecanica/OficinaMecanica.java
+diff --git a/OneDrive/Área de Trabalho/OficinaMecanica/Dump20231002/dbinfox_tbusuarios.sql b/OficinaMecanica/Dump20231002/dbinfox_tbusuarios.sql
+rename from OneDrive/Área de Trabalho/OficinaMecanica/Dump20231002/dbinfox_tbusuarios.sql
+rename to OficinaMecanica/Dump20231002/dbinfox_tbusuarios.sql
+diff --git a/OneDrive/Área de Trabalho/OficinaMecanica/Dump20231002/dbinfox_tbos.sql b/OficinaMecanica/Dump20231002/dbinfox_tbos.sql
+rename from OneDrive/Área de Trabalho/OficinaMecanica/Dump20231002/dbinfox_tbos.sql
+rename to OficinaMecanica/Dump20231002/dbinfox_tbos.sql
+diff --git a/OneDrive/Área de Trabalho/OficinaMecanica/src/main/java/com/mycompany/telas/TelaUsuario.java b/OficinaMecanica/src/main/java/com/mycompany/telas/TelaUsuario.java
+rename from OneDrive/Área de Trabalho/OficinaMecanica/src/main/java/com/mycompany/telas/TelaUsuario.java
+rename to OficinaMecanica/src/main/java/com/mycompany/telas/TelaUsuario.java
+diff --git a/OneDrive/Área de Trabalho/OficinaMecanica/src/main/java/com/mycompany/telas/TelaUsuario.form b/OficinaMecanica/src/main/java/com/mycompany/telas/TelaUsuario.form
+rename from OneDrive/Área de Trabalho/OficinaMecanica/src/main/java/com/mycompany/telas/TelaUsuario.form
+rename to OficinaMecanica/src/main/java/com/mycompany/telas/TelaUsuario.form
+diff --git a/OneDrive/Área de Trabalho/OficinaMecanica/src/main/java/com/mycompany/telas/TelaLogin.java b/OficinaMecanica/src/main/java/com/mycompany/telas/TelaLogin.java
+rename from OneDrive/Área de Trabalho/OficinaMecanica/src/main/java/com/mycompany/telas/TelaLogin.java
+rename to OficinaMecanica/src/main/java/com/mycompany/telas/TelaLogin.java
+diff --git a/OneDrive/Área de Trabalho/OficinaMecanica/src/main/java/com/mycompany/telas/TelaPrincipal.java b/OficinaMecanica/src/main/java/com/mycompany/telas/TelaPrincipal.java
+rename from OneDrive/Área de Trabalho/OficinaMecanica/src/main/java/com/mycompany/telas/TelaPrincipal.java
+rename to OficinaMecanica/src/main/java/com/mycompany/telas/TelaPrincipal.java
+diff --git a/OneDrive/Área de Trabalho/OficinaMecanica/src/main/java/com/mycompany/dal/ModuloConexao.java b/OficinaMecanica/src/main/java/com/mycompany/dal/ModuloConexao.java
+rename from OneDrive/Área de Trabalho/OficinaMecanica/src/main/java/com/mycompany/dal/ModuloConexao.java
+rename to OficinaMecanica/src/main/java/com/mycompany/dal/ModuloConexao.java
+diff --git a/OneDrive/Área de Trabalho/OficinaMecanica/src/main/java/com/mycompany/telas/TelaLogin.form b/OficinaMecanica/src/main/java/com/mycompany/telas/TelaLogin.form
+rename from OneDrive/Área de Trabalho/OficinaMecanica/src/main/java/com/mycompany/telas/TelaLogin.form
+rename to OficinaMecanica/src/main/java/com/mycompany/telas/TelaLogin.form
+diff --git a/OneDrive/Área de Trabalho/OficinaMecanica/src/main/java/com/mycompany/telas/TelaSobre.java b/OficinaMecanica/src/main/java/com/mycompany/telas/TelaSobre.java
+rename from OneDrive/Área de Trabalho/OficinaMecanica/src/main/java/com/mycompany/telas/TelaSobre.java
+rename to OficinaMecanica/src/main/java/com/mycompany/telas/TelaSobre.java
+diff --git a/OneDrive/Área de Trabalho/OficinaMecanica/src/main/java/com/mycompany/telas/TelaSobre.form b/OficinaMecanica/src/main/java/com/mycompany/telas/TelaSobre.form
+rename from OneDrive/Área de Trabalho/OficinaMecanica/src/main/java/com/mycompany/telas/TelaSobre.form
+rename to OficinaMecanica/src/main/java/com/mycompany/telas/TelaSobre.form
+diff --git a/OneDrive/Área de Trabalho/OficinaMecanica/pom.xml b/OficinaMecanica/pom.xml
+rename from OneDrive/Área de Trabalho/OficinaMecanica/pom.xml
+rename to OficinaMecanica/pom.xml
+diff --git a/OneDrive/Área de Trabalho/OficinaMecanica/nbactions.xml b/OficinaMecanica/nbactions.xml
+rename from OneDrive/Área de Trabalho/OficinaMecanica/nbactions.xml
+rename to OficinaMecanica/nbactions.xml
+diff --git a/OneDrive/Área de Trabalho/OficinaMecanica/PROJETO RAUL.txt b/OficinaMecanica/PROJETO RAUL.txt
+rename from OneDrive/Área de Trabalho/OficinaMecanica/PROJETO RAUL.txt
+rename to OficinaMecanica/PROJETO RAUL.txt
+diff --git a/OneDrive/Área de Trabalho/OficinaMecanica/banco de dados.sql b/OficinaMecanica/banco de dados.sql
+rename from OneDrive/Área de Trabalho/OficinaMecanica/banco de dados.sql
+rename to OficinaMecanica/banco de dados.sql
+diff --git a/OneDrive/Área de Trabalho/OficinaMecanica/script banco de dados.sql b/OficinaMecanica/script banco de dados.sql
+rename from OneDrive/Área de Trabalho/OficinaMecanica/script banco de dados.sql
+rename to OficinaMecanica/script banco de dados.sql
+diff --git a/OneDrive/Área de Trabalho/OficinaMecanica/Dump20231002/dbinfox_tbclientes.sql b/OficinaMecanica/Dump20231002/dbinfox_tbclientes.sql
+rename from OneDrive/Área de Trabalho/OficinaMecanica/Dump20231002/dbinfox_tbclientes.sql
+rename to OficinaMecanica/Dump20231002/dbinfox_tbclientes.sql
