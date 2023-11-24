@@ -45,7 +45,7 @@ public class TelaUsuario extends javax.swing.JInternalFrame {
                 txtUsuFone.setText(null);
                 txtUsuSenha.setText(null);
             }
-        } catch (Exception e) {
+        } catch (Exception exception) {
             JOptionPane.showMessageDialog(null, e);
         }
     }
