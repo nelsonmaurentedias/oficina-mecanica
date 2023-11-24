@@ -19,15 +19,15 @@ public class TelaLogin extends javax.swing.JFrame {
     ResultSet rs = null;
 
     public void logar() {
-        String sql = "select * from tbusuario where login=? and senha=?";
+        String sql = "select * from tbusuarios where login=? and senha=?";
         try {
             pst = conexao.prepareStatement(sql);
             pst.setString(1, txtUser.getText());
             pst.setString(2, txtSenha.getText());
             rs = pst.executeQuery();
             if (rs.next()) {
-                String perfil = rs.getString(6);
-                if (perfil.equals("admin")) {
+//                String perfil = rs.getString(6);
+//                if (perfil.equals("admin")) {
 
                     TelaPrincipal principal = new TelaPrincipal();
                     principal.setVisible(true);
@@ -35,12 +35,12 @@ public class TelaLogin extends javax.swing.JFrame {
                     TelaPrincipal.menCadUsu.setEnabled(true);
                     TelaPrincipal.lblUsuario.setText(rs.getString(2));
                     this.dispose();
-                } else {
-                    TelaPrincipal principal = new TelaPrincipal();
-                    principal.setVisible(true);
-                    TelaPrincipal.lblUsuario.setText(rs.getString(2));
-                    this.dispose();
-                }
+////                } else {
+//                    TelaPrincipal principal = new TelaPrincipal();
+//                    principal.setVisible(true);
+//                    TelaPrincipal.lblUsuario.setText(rs.getString(2));
+//                    this.dispose();
+////                }
                 conexao.close();
             } else {
                 JOptionPane.showMessageDialog(null, "usuário e/ou senha inválido(s)");
