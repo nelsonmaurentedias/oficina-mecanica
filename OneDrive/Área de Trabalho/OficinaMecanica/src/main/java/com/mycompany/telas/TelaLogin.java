@@ -26,8 +26,8 @@ public class TelaLogin extends javax.swing.JFrame {
             pst.setString(2, txtSenha.getText());
             rs = pst.executeQuery();
             if (rs.next()) {
-//                String perfil = rs.getString(6);
-//                if (perfil.equals("admin")) {
+                String perfil = rs.getString(6);
+                if (perfil.equals("admin")) {
 
                     TelaPrincipal principal = new TelaPrincipal();
                     principal.setVisible(true);
