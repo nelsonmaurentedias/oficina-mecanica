@@ -106,8 +106,8 @@ public class TelaUsuario extends javax.swing.JInternalFrame {
                 }
             }
 
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e);
+        } catch (Exception exception) {
+            JOptionPane.showMessageDialog(null, exception);
         }
     }
 
