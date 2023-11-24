@@ -35,12 +35,12 @@ public class TelaLogin extends javax.swing.JFrame {
                     TelaPrincipal.menCadUsu.setEnabled(true);
                     TelaPrincipal.lblUsuario.setText(rs.getString(2));
                     this.dispose();
-////                } else {
-//                    TelaPrincipal principal = new TelaPrincipal();
-//                    principal.setVisible(true);
-//                    TelaPrincipal.lblUsuario.setText(rs.getString(2));
-//                    this.dispose();
-////                }
+                } else {
+                    TelaPrincipal principal = new TelaPrincipal();
+                    principal.setVisible(true);
+                    TelaPrincipal.lblUsuario.setText(rs.getString(2));
+                    this.dispose();
+                }
                 conexao.close();
             } else {
                 JOptionPane.showMessageDialog(null, "usuário e/ou senha inválido(s)");
