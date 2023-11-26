@@ -14,4 +14,6 @@ Na reunião de 17 de outubro avançamos um pouco, criamos o repositório, coloca
 Objetivo:
 
 Criar um sistema de gerenciamento de oficina mecânica, contendo um CRUD simples de usuários e a possibilidade de criar ordem de serviço para o membro da oficina. 
-![image](https://github.com/nelsonmaurentedias/oficina-mecanica/assets/44475998/5bd41896-623f-4109-a39c-d04b5516fa26)
+
+![image](https://github.com/nelsonmaurentedias/oficina-mecanica/assets/44475998/fd78d2c7-4fbc-4d5d-81b6-2d3ed856e286)
+
