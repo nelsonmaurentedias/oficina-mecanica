@@ -1,16 +1,11 @@
-<<<<<<< HEAD
+# InfoX - Oficina Mecânica
+Gerenciamento de oficina mecânica.
 
-# Oficina-mecânica
-
-projeto PROBE gerenciamento de oficina mecânica.
-
-projeto disciplina prog.backend ciclo 12 prof. Raul
+Projeto Programação Back-end - Ciclo 12 (ADS)
+Professor: José Raul
+Alunos: Grupo 2
 
 =======
-
-Alunos do grupo 2
-
-> > > cdaad18f3d95af80059a6964d888cc02f9da4e37
 
 O projeto foi a proposta apresentada pelo colaborador Lucas, na reunião feita pelo Google Meet em 10 de outubo de 2023.
 Na ocasião todo o grupo estava presente.
