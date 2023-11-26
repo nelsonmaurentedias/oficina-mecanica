@@ -15,5 +15,6 @@ Objetivo:
 
 Criar um sistema de gerenciamento de oficina mecânica, contendo um CRUD simples de usuários e a possibilidade de criar ordem de serviço para o membro da oficina. 
 
-![image](https://github.com/nelsonmaurentedias/oficina-mecanica/assets/44475998/fd78d2c7-4fbc-4d5d-81b6-2d3ed856e286)
+![image](https://github.com/nelsonmaurentedias/oficina-mecanica/assets/44475998/6e3748c2-0fe7-40cf-9405-be101bfa5314)
+
 
