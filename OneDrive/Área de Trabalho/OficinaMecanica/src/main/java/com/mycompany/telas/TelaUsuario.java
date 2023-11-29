@@ -51,9 +51,18 @@ public class TelaUsuario extends javax.swing.JInternalFrame {
     }
 
     private void adicionar() {
-        String sql = "insert into tbusuarios(iduser, usuario, fone, login, senha, perfil) values(?,?,?,?,?,?)";
-        try {
-            pst = conexao.prepareStatement(sql);
+    String sqlCheckId = "SELECT iduser FROM tbusuarios WHERE iduser = ?";
+    String sqlInsert = "INSERT INTO tbusuarios(iduser, usuario, fone, login, senha, perfil) VALUES(?,?,?,?,?,?)";
+
+    try {
+        pst = conexao.prepareStatement(sqlCheckId);
+        pst.setString(1, txtUsuId.getText());
+        ResultSet rs = pst.executeQuery();
+
+        if (rs.next()) {
+            JOptionPane.showMessageDialog(null, "ID já existe na base de dados. Escolha um ID diferente");
+        } else {
+            pst = conexao.prepareStatement(sqlInsert);
             pst.setString(1, txtUsuId.getText());
             pst.setString(2, txtUsuNome.getText());
             pst.setString(3, txtUsuFone.getText());
@@ -61,7 +70,7 @@ public class TelaUsuario extends javax.swing.JInternalFrame {
             pst.setString(5, txtUsuSenha.getText());
             pst.setString(6, cboUsuPerfil.getSelectedItem().toString());
 
-            if (((txtUsuId.getText().isEmpty()) || (txtUsuNome.getText().isEmpty()) || (txtUsuLogin.getText().isEmpty())) || (txtUsuSenha.getText().isEmpty())) {
+            if (txtUsuId.getText().isEmpty() ||  txtUsuNome.getText().isEmpty() || txtUsuLogin.getText().isEmpty() || txtUsuSenha.getText().isEmpty()) {
                 JOptionPane.showMessageDialog(null, "Preencha os campos obrigatórios");
             } else {
                 int adicionado = pst.executeUpdate();
@@ -75,13 +84,13 @@ public class TelaUsuario extends javax.swing.JInternalFrame {
                     txtUsuSenha.setText(null);
                 }
             }
-
-        } catch (Exception exception) {
-            JOptionPane.showMessageDialog(null, exception);
         }
+    } catch (Exception exception) {
+        JOptionPane.showMessageDialog(null, exception);
     }
+}
 
-    private void alterar() {
+private void alterar() {
         String sql = "update tbusuarios set usuario=?, fone=?, login=?, senha=?, perfil=? where iduser=?";
         try {
             pst = conexao.prepareStatement(sql);
@@ -91,7 +100,31 @@ public class TelaUsuario extends javax.swing.JInternalFrame {
             pst.setString(4, txtUsuSenha.getText());
             pst.setString(5, cboUsuPerfil.getSelectedItem().toString());
             pst.setString(6, txtUsuId.getText());
-            if (((txtUsuId.getText().isEmpty()) || (txtUsuNome.getText().isEmpty()) || (txtUsuLogin.getText().isEmpty())) || (txtUsuSenha.getText().isEmpty())) {
+            
+            if (!txtUsuId.getText().isEmpty() && txtUsuNome.getText().isEmpty() && txtUsuLogin.getText().isEmpty() && txtUsuSenha.getText().isEmpty()) {
+                String consulta = "select * from tbusuarios where iduser=?";
+
+                pst = conexao.prepareStatement(consulta);
+                pst.setString(1, txtUsuId.getText());
+                rs = pst.executeQuery();
+                if (rs.next()) {
+                    txtUsuNome.setText(rs.getString(2));
+                    txtUsuLogin.setText(rs.getString(4));
+                    txtUsuFone.setText(rs.getString(3));
+                    txtUsuSenha.setText(rs.getString(5));
+                    cboUsuPerfil.setSelectedItem(rs.getString(6));
+                    return;
+                } else {
+                    JOptionPane.showMessageDialog(null, "Usuário inexistente");
+                    txtUsuNome.setText(null);
+                    txtUsuLogin.setText(null);
+                    txtUsuFone.setText(null);
+                    txtUsuSenha.setText(null);
+                }
+                
+            }
+
+                if (((txtUsuId.getText().isEmpty()) || (txtUsuNome.getText().isEmpty()) || (txtUsuLogin.getText().isEmpty())) || (txtUsuSenha.getText().isEmpty())) {
                 JOptionPane.showMessageDialog(null, "Preencha os campos obrigatórios");
             } else {
                 int adicionado = pst.executeUpdate();
@@ -106,13 +139,13 @@ public class TelaUsuario extends javax.swing.JInternalFrame {
                 }
             }
 
-        } catch (Exception exception) {
-            JOptionPane.showMessageDialog(null, exception);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e);
         }
     }
 
     private void remover() {
-        int confirma = JOptionPane.showConfirmDialog(null, "Tem certeza que desejar remover esta usuário?", "Atenção", JOptionPane.YES_NO_OPTION);
+        int confirma = JOptionPane.showConfirmDialog(null, "Tem certeza que desejar remover este usuário?", "Atenção", JOptionPane.YES_NO_OPTION);
         if (confirma == JOptionPane.YES_OPTION) {
             String sql = "delete from tbusuarios where iduser=?";
             try {
